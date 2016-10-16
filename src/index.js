@@ -1,18 +1,14 @@
-import angular from 'angular';
+// import * as angular from 'angular';
 
-import 'ui-storybook/helpers/ng';
+import 'angular-material';
+import 'angular-material/angular-material.css';
 
-import app from './app/index';
+import card from './card/card.component';
 
-const mainModule = angular.module('sb', [
-  'helper',
-  app
+const module = angular.module('sb-angular-material-demo', [
+  'ngMaterial'
 ]);
 
-let preview = document.createElement('preview-helper');
-document.body.appendChild(preview);
+module.component('card', card);
 
-angular.element(preview)
-  .ready(() => {
-    angular.bootstrap(preview, [mainModule.name], { strictDi: false });
-  });
+export default module.name;
