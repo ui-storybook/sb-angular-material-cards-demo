@@ -1,7 +1,7 @@
 {
-  "name": "sb-boilerplate",
-  "version": "0.0.1",
-  "description": "UI Storybook boilerplate for Angular 1.5.*",
+  "name": "sb-demo",
+  "version": "1.0.0",
+  "description": "SB demo with angular material cards",
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
