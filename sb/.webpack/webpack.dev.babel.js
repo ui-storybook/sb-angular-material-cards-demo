@@ -11,7 +11,7 @@ module.exports = {
             'webpack-hot-middleware/client?noInfo=true',
             './sb/index.js'
         ],
-        stories: './sb/stories'
+        stories: ['./sb/stories']
     },
     output: {
         filename: '[name].js',
@@ -30,9 +30,6 @@ module.exports = {
             { from: './sb/.static/preview.html', to: 'preview.html' },
             { from: './sb/.static/index.html', to: 'index.html' }
         ]),
-        new ngAnnotatePlugin({
-            add: true 
-        }),
         new webpack.HotModuleReplacementPlugin()
     ],
     module: {
